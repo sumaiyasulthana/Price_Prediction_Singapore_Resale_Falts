@@ -13,26 +13,26 @@ Data Transformation: Using Python and Pandas to clean and structure the data.Pre
 Feature Engineering: Extract relevant features from the dataset, including town, flat type, storey range_start & end, floor area, flat model, and lease commence date,year and mont 
                      Created any additional features that may enhance prediction accuracy.
 Model Selection and Training: Choose an appropriate machine learning model for regression (e.g., linear regression, decision trees,random forests,xgboost,gradient Boosting,Adaboost,
-). 
-Train the model on the historical data, using a portion of the dataset for training.
+catboost,K-nearest neighbour). Got RANDOM FOREST Regressor as best Score0.98 Train the model on the historical data, using a portion of the dataset for training.
 
+Model Evaluation: Evaluated the model's predictive performance using regression metrics such as Mean Absolute Error (MAE), Mean Squared Error (MSE),Root Mean Squared Error (RMSE) and 
+                   R2 Score. on both trained and test data.
 
-Dashboard Creation: Using Streamlit and Plotly to build an interactive dashboard, In an advance way to get animation effects
-
-Data Retrieval: Fetching data directly from the database of SQLITE to dynamically update the dashboard.
+Dashboard Creation: Using Streamlit to build an interactive dashboard, In an advance way to get animation effects.Utilize the trained machine learning model (Linear Regression)
+                    to predict the resale price based on user inputs.
 
 REQUIRED LIBRARIES:
 
-plotly.express
+1.Scikit-learn
 2.streamlit
 
-3.sqlalchemy
+3.ensemble
 
-4.sqlite3
+4.numpy
 
 5.pandas
 
-6.PIL
+6.seaborn
 
 7.matplotlib.pyplot
 
@@ -44,4 +44,4 @@ Migration of data from the dataframe to a SQLITE database directly for efficient
 
 Search and retrieval of data from the SQLITE database using different search options
 
-DOMAIN : DATA SCIENCE
+DOMAIN : MACHINE LEARNING
