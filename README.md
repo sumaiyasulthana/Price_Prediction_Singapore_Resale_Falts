@@ -24,6 +24,7 @@ Dashboard Creation: Using Streamlit to build an interactive dashboard, In an adv
 REQUIRED LIBRARIES:
 
 1.Scikit-learn
+
 2.streamlit
 
 3.ensemble
@@ -36,12 +37,18 @@ REQUIRED LIBRARIES:
 
 7.matplotlib.pyplot
 
-FEATURES of my App: The following functions are available in my Pluse Project. Retrieval of data Year wise,Quarter wise,State and District wise.Even more pincode wise Registered users details with on which brand of Mobile Transaction is been done.
+FEATURES of my App: The following functions are available in my Singapore Real Estate app.
 
-Collecting of data and store temporary in pandas dataframe.
+Retrieval of data as input from user.
 
-Migration of data from the dataframe to a SQLITE database directly for efficient querying and analysis.
+Does( Label Encoder,And Standard Scaler) on input and makes it in standardized form.
 
-Search and retrieval of data from the SQLITE database using different search options
+Migrate Standardized data to model.Predict on which already HYPERPARAMETER TUNINING is done and pickled.
+
+Loaded picked form model Deliver's the output.
+
+Price Predicted for the selected House model
+
+
 
 DOMAIN : MACHINE LEARNING
