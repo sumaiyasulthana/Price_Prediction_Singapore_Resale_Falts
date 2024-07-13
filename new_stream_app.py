@@ -91,14 +91,11 @@ with tab2:
                 floor_area_sqm = st.number_input('Required Floor Area',value=None, placeholder="Type a number...")
                 
                 flat_model = st.selectbox('Select the Flat_Model', ['IMPROVED', 'NEW GENERATION', 'MODEL A', 'STANDARD', 'SIMPLIFIED',
-                                                'MODEL A-MAISONETTE', 'APARTMENT', 'MAISONETTE', 'TERRACE',
-                                                '2-ROOM', 'IMPROVED-MAISONETTE', 'MULTI GENERATION',
-                                                'PREMIUM APARTMENT', 'Improved', 'New Generation', 'Model A',
-                                                'Standard', 'Apartment', 'Simplified', 'Model A-Maisonette',
-                                                'Maisonette', 'Multi Generation', 'Adjoined flat',
-                                                'Premium Apartment', 'Terrace', 'Improved-Maisonette',
-                                                'Premium Maisonette', '2-room', 'Model A2', 'DBSS', 'Type S1',
-                                                'Type S2', 'Premium Apartment Loft', '3Gen'])
+                                                                    'MODEL A-MAISONETTE', 'APARTMENT', 'MAISONETTE', 'TERRACE',
+                                                                    '2-ROOM', 'IMPROVED-MAISONETTE', 'MULTI GENERATION',
+                                                                    'PREMIUM APARTMENT','Standard', 'Simplified','Adjoined flat',
+                                                                    'Premium Maisonette','Model A2', 'DBSS', 'Type S1',
+                                                                    'Type S2', 'Premium Apartment Loft', '3Gen'])
             
                 lease_commence_date =st.slider("Select the Lease_Commence_Date:",1966,2020,1966)#data['lease_commence_date'].min(),data['lease_commence_date'].max(),data['lease_commence_date'].min()) 
                 years =st.slider("Select the Flat_year:",1990,2024,1990) 
