@@ -1,8 +1,8 @@
 import streamlit as st
-import plotly.express as px
+
 import pandas as pd
 import numpy as np
-import matplotlib.pyplot as plt
+
 import pickle
 
 data =pd.read_csv("finaldata.csv")
@@ -11,7 +11,7 @@ data =pd.read_csv("finaldata.csv")
 #streamlit part
 st.set_page_config(layout="wide")
 
-with open(r'D:\Backup 11-06-2024\GUVI_PROJECTS\capstone_3\.venv\style1.css') as f:
+with open(r'style1.css') as f:
   st.markdown(f"""<style>{f.read()}</style>""", unsafe_allow_html=True)
 
 with st.sidebar:
