@@ -1,13 +1,11 @@
 import streamlit as st
-
 import pandas as pd
 import numpy as np
-
 import pickle
 
-data =pd.read_csv("finaldata.csv")
+#data =pd.read_csv("finaldata.csv")
 # data1 =pd.read_csv('encodeddata.csv')
-
+data2 =pd.read_csv("street_name.csv")
 #streamlit part
 st.set_page_config(layout="wide")
 
@@ -89,7 +87,7 @@ with tab2:
                 # with col2:
                 #   flat_type =st.radio(['4 ROOM', '5 ROOM', 'EXECUTIVE','MULTI GENERATION'],index=None)    
               
-                street_name = st.selectbox('Street_Name',(data["street_name"].unique()))
+                street_name = st.selectbox('Street_Name',(data2["street_name"].unique()))
                 floor_area_sqm = st.number_input('Required Floor Area',value=None, placeholder="Type a number...")
                 
                 flat_model = st.selectbox('Select the Flat_Model', ['IMPROVED', 'NEW GENERATION', 'MODEL A', 'STANDARD', 'SIMPLIFIED',
